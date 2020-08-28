@@ -324,10 +324,12 @@ function Main(props) {
         onClose={closeAddBalanceDialog}
         onSuccess={onPaymentSuccess}
       />
+      
       <NavBar
         selectedTab={selectedTab}
         messages={messages}
         openAddBalanceDialog={openAddBalanceDialog}
+        
       />
       <ConsecutiveSnackbarMessages
         getPushMessageFromChild={getPushMessageFromChild}
