@@ -10,9 +10,12 @@ import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
 // const warningMain = "rgba(253, 200, 69, .5)";
 // const warningDark = "rgba(253, 200, 69, .7)";
 
+//Paletta utilizada:
+//  https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=006800&secondary.color=aed581
+
 const primary = "#006800";
 const secondary = "#aed581";
-const black = "#f8ffd7";
+const black = "#7da453";
 const darkBlack = "#94af76";
 const background = "#F5F5F6";
 const warningLight = "rgba(253, 200, 69, .3)";

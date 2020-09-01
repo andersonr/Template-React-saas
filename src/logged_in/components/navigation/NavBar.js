@@ -35,7 +35,11 @@ import profilePicture from "../../dummy_data/images/profilePicture.jpg";
 const styles = (theme) => ({
   appBar: {
     boxShadow: theme.shadows[6],
-    backgroundColor: theme.palette.common.white,
+    // backgroundColor: theme.palette.common.white,
+
+    backgroundColor: theme.palette.primary,
+
+
     transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -93,7 +97,8 @@ const styles = (theme) => ({
   },
   menuLink: {
     textDecoration: "none",
-    color: theme.palette.text.primary,
+    // color: theme.palette.text.primary,
+    color: theme.palette.text.secondary,
   },
   iconListItem: {
     width: "auto",
@@ -275,7 +280,7 @@ function NavBar(props) {
                 <ListItemText
                   className={classes.username}
                   primary={
-                    <Typography color="textPrimary">Username</Typography>
+                    <Typography color="secondary">Username</Typography>
                   }
                 />
               )}
@@ -283,8 +288,8 @@ function NavBar(props) {
           </Box>
           <IconButton
             onClick={openDrawer}
-            color="primary"
-            aria-label="Open Sidedrawer"
+            color="secondary"
+            aria-label="Abrir barra lateral"
           >
             <SupervisorAccountIcon />
           </IconButton>

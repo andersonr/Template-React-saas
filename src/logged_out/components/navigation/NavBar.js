@@ -20,7 +20,8 @@ import NavigationDrawer from "../../../shared/components/NavigationDrawer";
 const styles = theme => ({
   appBar: {
     boxShadow: theme.shadows[6],
-    backgroundColor: theme.palette.common.white
+    // backgroundColor: theme.palette.common.white
+    backgroundColor: theme.palette.primary
   },
   toolbar: {
     display: "flex",
@@ -28,7 +29,8 @@ const styles = theme => ({
   },
   menuButtonText: {
     fontSize: theme.typography.body1.fontSize,
-    fontWeight: theme.typography.h6.fontWeight
+    fontWeight: theme.typography.h6.fontWeight,
+    color: theme.palette.common.white
   },
   brandText: {
     fontFamily: "'Baloo Bhaijaan', cursive",
@@ -52,16 +54,16 @@ function NavBar(props) {
   const menuItems = [
     {
       link: "/",
-      name: "Home",
+      name: "Como funciona?",
       icon: <HomeIcon className="text-white" />
     },
     {
       link: "/blog",
-      name: "Blog",
+      name: "Parceiros",
       icon: <BookIcon className="text-white" />
     },
     {
-      name: "Register",
+      name: "Registre-se",
       onClick: openRegisterDialog,
       icon: <HowToRegIcon className="text-white" />
     },
@@ -114,7 +116,8 @@ function NavBar(props) {
                       onClick={handleMobileDrawerClose}
                     >
                       <Button
-                        color="secondary"
+                         color="secondary"
+                        //color="white"
                         size="large"
                         classes={{ text: classes.menuButtonText }}
                       >
@@ -126,6 +129,7 @@ function NavBar(props) {
                 return (
                   <Button
                     color="secondary"
+                    //color="white"
                     size="large"
                     onClick={element.onClick}
                     classes={{ text: classes.menuButtonText }}
