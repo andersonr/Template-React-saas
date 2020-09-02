@@ -32,13 +32,13 @@ function Main(props) {
   const selectHome = useCallback(() => {
     smoothScrollTop();
     document.title =
-      "WaVer - Exemplo aplicação";
+      "Fides - Cartão fidelidade";
     setSelectedTab("Home");
   }, [setSelectedTab]);
 
   const selectBlog = useCallback(() => {
     smoothScrollTop();
-    document.title = "WaVer - Blog";
+    document.title = "Fides - Parceiros";
     setSelectedTab("Blog");
   }, [setSelectedTab]);
 

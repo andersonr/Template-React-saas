@@ -227,7 +227,7 @@ function NavBar(props) {
                 <IconButton
                   aria-label="Open Navigation"
                   onClick={openMobileDrawer}
-                  color="primary"
+                  color="secondary"
                 >
                   <MenuIcon />
                 </IconButton>
@@ -238,9 +238,9 @@ function NavBar(props) {
                 variant="h4"
                 className={classes.brandText}
                 display="inline"
-                color="primary"
+                color="secondary"
               >
-                Wa
+                Fi
               </Typography>
               <Typography
                 variant="h4"
@@ -248,7 +248,7 @@ function NavBar(props) {
                 display="inline"
                 color="secondary"
               >
-                Ver
+                des
               </Typography>
             </Hidden>
           </Box>

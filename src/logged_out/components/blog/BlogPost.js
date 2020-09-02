@@ -42,7 +42,7 @@ function BlogPost(props) {
   }, [importImage, setSrc]);
 
   useEffect(() => {
-    document.title = `WaVer - ${title}`;
+    document.title = `Fides - ${title}`;
     smoothScrollTop();
     dynLoadImage();
   }, [title, dynLoadImage]);

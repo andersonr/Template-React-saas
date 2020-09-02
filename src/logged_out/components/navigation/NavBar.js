@@ -82,9 +82,9 @@ function NavBar(props) {
               variant="h4"
               className={classes.brandText}
               display="inline"
-              color="primary"
+              color="secondary"
             >
-              Wa
+              Fi
             </Typography>
             <Typography
               variant="h4"
@@ -92,7 +92,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              Ver
+              des
             </Typography>
           </div>
           <div>
@@ -102,7 +102,7 @@ function NavBar(props) {
                 onClick={handleMobileDrawerOpen}
                 aria-label="Open Navigation"
               >
-                <MenuIcon color="primary" />
+                <MenuIcon color="secondary" />
               </IconButton>
             </Hidden>
             <Hidden smDown>
